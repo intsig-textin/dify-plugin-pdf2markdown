@@ -1,9 +1,55 @@
-## pdf2markdown
+# pdf2markdown
 
-**Author:** textin
-**Version:** 0.0.1
+**Author:** TextIn
+**Version:** 0.1.0
 **Type:** tool
 
-### Description
+# 工具描述
 
-将 pdf 和 图像 快速轻松地转换为 markdown 的工具
+合合信息[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)是一款专为大语言模型（LLM）下游任务设计的通用文档解析服务。它支持多种 MCP 协议客户端，能够识别文档或图片中的文字信息，包括通金融报告、国家标准、学术论文、企业公告、使用手册、财务发票等文档提取关键信息，并支持将文档内容还原成标准的 Markdown 格式。TextIn 支持 OCR 文字识别，覆盖 10 多种常见文档版式，并支持 52+ 种语言，帮助各类大模型在理解、生成、问答等场景中高效利用文档数据。
+
+# 关键特性
+
+* 表格识别更精准：有线表、无线表、密集表，都能精准识别，单元格合并、跨页表格合并也不在话下
+* 解析速度极快：100页长文档，最快仅需1.5s，不仅支撑在线应用提供极致用户体验，也能大幅缩短离线处理时间
+* 高稳定性：单日数百万级调用量，成功率可达99.999%，来自亿级用户体量APP的技术，稳定可靠
+* 格式种类多：一个接口，支持 PDF、Word（doc/docx）、常见图片（jpg/png/webp/tiff）、HTML 等多种文件格式一次请求，即可获取文字、表格、标题层级、公式、手写字符、图片信息
+
+# 使用案例
+
+* 金融报告数据结构化快速提取和标准化财报、研报等金融文档中的关键数据，助力数据分析与决策支持。
+* 教育题库清洗高效解析各类教材、试卷文档，提取题目信息并标准化格式，提升题库构建效率。
+* RAG 知识库建设解析非结构化文档内容，转化为结构化知识片段，赋能大模型检索增强生成（RAG）应用。
+* 文档翻译与格式保留结合 OCR 和文档结构解析，实现多语种文档的内容翻译与格式还原。
+* 在线判卷与自动批改识别学生答题内容，提取并结构化，支持自动评分与结果分析。
+* 在线文档问答系统将文档解析为可检索格式，支撑基于文档的智能问答系统，提升信息查询效率。
+* RPA / Agent 自动化处理作为机器人流程自动化（RPA）和智能代理（Agent）的前置模块，实现文档识别、内容提取与智能分发
+
+# 常见问题解答
+
+Q：使用 TextIn OCRMCP 服务是否需要付费？
+A：是的，TextIn OCR MCP 服务为付费服务，具体计费规则请参考官方定价[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)说明。
+
+Q：TextIn 支持哪些类型的文档？
+A：支持图片（JPG、PNG 等）、PDF 文件、Word 文档（DOC/DOCX）、HTML、Excel等多种格式。
+
+Q：TextIn 支持哪些语言的文字识别？
+A：目前支持 52+ 种语言，包括中文、英文、日文、韩文、德文、法文等主流语言。
+
+Q：文档解析后的输出格式是什么？
+A：默认输出为结构化的 Markdown 格式，同时也支持 JSON 格式内容提取。
+
+Q：有没有调用频率限制？
+A：根据不同套餐和账号类型，会有不同的调用次数和并发限制，详细信息请参考官方文档TextIn OCR。
+
+Q：如何获取和管理我的 API 密钥？
+A：[TextIn OCR 注册链接](https://www.textin.com/register/code/P3U7MA)注册账号后，在[用户中心](https://www.textin.com/console/dashboard/setting)可生成并管理你的 APP ID 和 APP SECRET，用于调用服务接口[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)。
+
+Q：是否支持批量处理文档？
+A：支持，可以通过 API 批量上传文档进行识别和解析，适合大规模文档处理场景。
+
+Q：解析后的文档是否保留原有排版？
+A：TextIn 会根据常见阅读顺序还原文档结构，但某些极复杂布局可能存在一定调整。
+
+Q：是否提供 SDK 或示例代码？
+A：是的，TextIn 提供多语言 SDK（如 Python、Java）和丰富的 API 调用示例，方便快速接入。

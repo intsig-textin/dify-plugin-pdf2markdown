@@ -1,3 +1,3 @@
-## Privacy
+# Privacy
 
-!!! Please fill in the privacy policy of the plugin.
+[隐私协议](https://www.textin.com/privacy)
