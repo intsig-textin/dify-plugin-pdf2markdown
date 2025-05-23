@@ -28,25 +28,33 @@
 # 常见问题解答
 
 **Q：TextIn 支持哪些类型的文档？**
+
 A：支持图片（JPG、PNG 等）、PDF 文件、Word 文档（DOC/DOCX）、HTML、Excel等多种格式。
 
 **Q：TextIn 支持哪些语言的文字识别？**
+
 A：目前支持 52+ 种语言，包括中文、英文、日文、韩文、德文、法文等主流语言。
 
 **Q：文档解析后的输出格式是什么？**
+
 A：默认输出为结构化的 Markdown 格式，同时也支持 JSON 格式内容提取。
 
 **Q：有没有调用频率限制？**
+
 A：根据不同套餐和账号类型，会有不同的调用次数和并发限制，详细信息请参考官方文档TextIn OCR。
 
 **Q：如何获取和管理我的 API 密钥？**
+
 A：[TextIn OCR 注册链接](https://www.textin.com/register/code/P3U7MA)注册账号后，在[用户中心](https://www.textin.com/console/dashboard/setting)可生成并管理你的 APP ID 和 APP SECRET，用于调用服务接口[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)。
 
 **Q：是否支持批量处理文档？**
+
 A：支持，可以通过 API 批量上传文档进行识别和解析，适合大规模文档处理场景。
 
 **Q：解析后的文档是否保留原有排版？**
+
 A：TextIn 会根据常见阅读顺序还原文档结构，但某些极复杂布局可能存在一定调整。
 
 **Q：是否提供 SDK 或示例代码？**
+
 A：是的，TextIn 提供多语言 SDK（如 Python、Java）和丰富的 API 调用示例，方便快速接入。
