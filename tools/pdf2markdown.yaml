@@ -1,5 +1,5 @@
 identity:
-  name: 通用文档解析
+  name: pdf2markdown
   author: textin
   label:
     en_US: pdf2markdown

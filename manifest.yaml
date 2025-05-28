@@ -1,4 +1,4 @@
-version: 0.1.0
+version: 1.0.0
 type: plugin
 author: textin
 name: pdf2markdown
@@ -22,7 +22,7 @@ plugins:
   tools:
     - provider/pdf2markdown.yaml
 meta:
-  version: 0.1.0
+  version: 1.0.0
   arch:
     - amd64
     - arm64

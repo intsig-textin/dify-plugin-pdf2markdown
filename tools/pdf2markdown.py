@@ -28,7 +28,7 @@ class Pdf2markdownTool(Tool):
             if response.status_code != 200:
                 yield self.create_json_message({
                     "code": response.status_code,
-                    "message": "获取在线文件失败",
+                    "message": "Download file failed.",
                     "markdown": ""
                 })
                 return
@@ -74,6 +74,6 @@ class Pdf2markdownTool(Tool):
         except Exception as e:
             yield self.create_json_message({
                 "code": 500,
-                "message": f"处理异常: {str(e)}",
+                "message": f"Error: {str(e)}",
                 "markdown": ""
             })

@@ -1,3 +1,3 @@
 # Privacy
 
-[隐私协议](https://www.textin.com/privacy)
+[textin privacy](https://www.textin.com/privacy)

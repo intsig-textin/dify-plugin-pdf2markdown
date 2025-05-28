@@ -2,61 +2,53 @@
 
 **Author:** textin
 
-**Version:** 0.1.0
+**Version:** 1.0.0
 
 **Type:** tool
 
-# 工具描述
+# Description
 
-合合信息[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)是一款专为大语言模型（LLM）下游任务设计的通用文档解析服务。它能够识别文档或图片中的文字信息，包括通金融报告、国家标准、学术论文、企业公告、使用手册、财务发票等文档提取关键信息，并支持将文档内容还原成标准的 Markdown 格式。TextIn 支持 OCR 文字识别，覆盖 10 多种常见文档版式，并支持 52+ 种语言，帮助各类大模型在理解、生成、问答等场景中高效利用文档数据。
+[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)is a general-purpose document parsing service designed specifically for downstream tasks of large language models (LLMs). It can recognize text information from documents or images, including financial reports, national standards, academic papers, corporate announcements, user manuals, financial invoices, and more. It extracts key information and supports restoring the document content into standard Markdown format. TextIn offers OCR text recognition covering more than 10 common document layouts and supports over 52 languages, helping various large models efficiently utilize document data in scenarios such as comprehension, generation, and question answering.
 
-# 关键特性
+# Features
 
-* 表格识别更精准：有线表、无线表、密集表，都能精准识别，单元格合并、跨页表格合并也不在话下
-* 解析速度极快：100页长文档，最快仅需1.5s，不仅支撑在线应用提供极致用户体验，也能大幅缩短离线处理时间
-* 高稳定性：单日数百万级调用量，成功率可达99.999%，来自亿级用户体量APP的技术，稳定可靠
-* 格式种类多：一个接口，支持 PDF、Word（doc/docx）、常见图片（jpg/png/webp/tiff）、HTML 等多种文件格式一次请求，即可获取文字、表格、标题层级、公式、手写字符、图片信息
+* Highly Accurate Table Recognition: Accurately identifies tables with or without visible borders, as well as dense tables. It handles merged cells and tables spanning multiple pages with ease.
+* Ultra-fast Parsing Speed: For documents up to 100 pages, parsing can be completed in as fast as 1.5 seconds. This ensures an exceptional user experience for online applications and significantly reduces offline processing time.
+* High Stability: Capable of handling millions of requests per day with a success rate of up to 99.999%. Powered by technology proven in large-scale apps with hundreds of millions of users, ensuring stable and reliable performance.
+* Wide Format Support: A single API supports various file formats, including PDF, Word (doc/docx), common image formats (jpg/png/webp/tiff), HTML, and more. With one request, you can extract text, tables, heading hierarchy, formulas, handwritten characters, and image information.
 
-# 使用案例
+# Cases
 
-* 金融报告数据结构化快速提取和标准化财报、研报等金融文档中的关键数据，助力数据分析与决策支持。
-* 教育题库清洗高效解析各类教材、试卷文档，提取题目信息并标准化格式，提升题库构建效率。
-* RAG 知识库建设解析非结构化文档内容，转化为结构化知识片段，赋能大模型检索增强生成（RAG）应用。
-* 文档翻译与格式保留结合 OCR 和文档结构解析，实现多语种文档的内容翻译与格式还原。
-* 在线判卷与自动批改识别学生答题内容，提取并结构化，支持自动评分与结果分析。
-* 在线文档问答系统将文档解析为可检索格式，支撑基于文档的智能问答系统，提升信息查询效率。
-* RPA / Agent 自动化处理作为机器人流程自动化（RPA）和智能代理（Agent）的前置模块，实现文档识别、内容提取与智能分发
+* Financial Report Data Extraction: Quickly extract and standardize key data from financial documents such as earnings reports and research reports to support data analysis and decision-making.
+* Educational Question Bank Cleaning: Efficiently parse various textbooks and exam papers to extract and standardize question data, improving the efficiency of question bank construction.
+* RAG Knowledge Base Construction: Analyze unstructured document content and convert it into structured knowledge chunks to empower Retrieval-Augmented Generation (RAG) applications.
+* Document Translation with Format Preservation: Combine OCR and document structure analysis to translate multilingual documents while preserving their original formatting.
+* Online Grading and Automated Scoring: Recognize and structure student answers to support automated grading and result analysis.
+* Online Document Q&A System: Parse documents into a searchable format to support intelligent Q&A systems based on documents, improving information retrieval efficiency.
+* RPA/Agent Automation: Serve as a pre-processing module for Robotic Process Automation (RPA) and intelligent agents to enable document recognition, content extraction, and intelligent distribution.
 
-# 常见问题解答
+# Q&A
 
-**Q：TextIn 支持哪些类型的文档？**
+**Q: What types of documents does TextIn support?**
+A: It supports a wide range of formats including images (JPG, PNG, etc.), PDF files, Word documents (DOC/DOCX), HTML, Excel, and more.
 
-A：支持图片（JPG、PNG 等）、PDF 文件、Word 文档（DOC/DOCX）、HTML、Excel等多种格式。
+**Q: What languages does TextIn support for text recognition?**
+A: Currently, it supports over 52 languages, including major ones such as Chinese, English, Japanese, Korean, German, and French.
 
-**Q：TextIn 支持哪些语言的文字识别？**
+**Q: What is the output format after document parsing?**
+A: The default output is structured Markdown format, and JSON format is also supported for content extraction.
 
-A：目前支持 52+ 种语言，包括中文、英文、日文、韩文、德文、法文等主流语言。
+**Q: Are there any usage limits?**
+A: Usage limits vary based on the subscription plan and account type, including limits on the number of calls and concurrency. Please refer to the official TextIn OCR documentation for details.
 
-**Q：文档解析后的输出格式是什么？**
+**Q: How do I obtain and manage my API key?**
+A: After registering via the [TextIn OCR](https://www.textin.com/register/code/P3U7MA), you can generate and manage your APP ID and APP SECRET in the [User Center](https://www.textin.com/console/dashboard/setting) for calling the [TextIn OCR service](https://www.textin.com/market/detail/pdf_to_markdown).
 
-A：默认输出为结构化的 Markdown 格式，同时也支持 JSON 格式内容提取。
+**Q: Does TextIn support batch document processing?**
+A: Yes, it supports batch uploading of documents via API for recognition and parsing, which is suitable for large-scale document processing.
 
-**Q：有没有调用频率限制？**
+**Q: Will the parsed document retain the original layout?**
+A: TextIn restores the document structure based on common reading order, but extremely complex layouts may undergo some adjustments.
 
-A：根据不同套餐和账号类型，会有不同的调用次数和并发限制，详细信息请参考官方文档TextIn OCR。
-
-**Q：如何获取和管理我的 API 密钥？**
-
-A：[TextIn OCR 注册链接](https://www.textin.com/register/code/P3U7MA)注册账号后，在[用户中心](https://www.textin.com/console/dashboard/setting)可生成并管理你的 APP ID 和 APP SECRET，用于调用服务接口[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)。
-
-**Q：是否支持批量处理文档？**
-
-A：支持，可以通过 API 批量上传文档进行识别和解析，适合大规模文档处理场景。
-
-**Q：解析后的文档是否保留原有排版？**
-
-A：TextIn 会根据常见阅读顺序还原文档结构，但某些极复杂布局可能存在一定调整。
-
-**Q：是否提供 SDK 或示例代码？**
-
-A：是的，TextIn 提供多语言 SDK（如 Python、Java）和丰富的 API 调用示例，方便快速接入。
+**Q: Are SDKs or code samples provided?**
+A: Yes, TextIn offers multi-language SDKs (e.g., Python, Java) and comprehensive API usage examples to facilitate quick integration.
