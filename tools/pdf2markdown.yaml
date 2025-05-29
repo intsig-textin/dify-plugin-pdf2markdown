@@ -21,7 +21,7 @@ parameters:
       en_US: Image or PDF URL
       zh_Hans: 图片、PDF等文件在线链接地址
     llm_description: Image or PDF URL
-    form: form
+    form: llm
 
   - name: app_id
     type: string
