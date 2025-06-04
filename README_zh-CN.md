@@ -42,7 +42,7 @@ def main(response):
 * 高精度表格识别： 能准确识别有无边框、密集型、跨页、合并单元格等各种表格。
 * 极速解析： 最快可在 1.5 秒内完成百页文档解析，极大提升在线使用体验，降低离线处理耗时。
 * 高稳定性： 每日可稳定处理百万级请求，成功率达 99.999%，已在亿级用户应用中验证。
-* 广泛格式支持： 单一 API 支持 PDF、Word（doc/docx）、常见图片（jpg/png/webp/tiff）、HTML 等多种格式，可一次性提取文本、表格、标题层级、公式、手写字符和图片信息。
+* 广泛格式支持： 单一 API 支持 PDF、Word（doc/docx）、常见图片（jpg/png/webp/tiff）、HTML 、Excel（xlsx, csv），PPT（pptx），TXT 等多种格式，可一次性提取文本、表格、标题层级、公式、手写字符和图片信息。
 
 # 应用场景
 
@@ -57,7 +57,7 @@ def main(response):
 # Q&A
 
 **问：TextIn 支持哪些类型的文档？**
-答：支持包括图片（JPG、PNG 等）、PDF、Word（DOC/DOCX）、HTML、Excel 等在内的多种格式。
+答：支持包括图片（JPG、PNG 等）、PDF、Word（DOC/DOCX）、HTML、Excel（xlsx, csv），PPT（pptx），TXT 等在内的多种格式。
 
 **问：TextIn 支持哪些语言的文字识别？**
 答：目前支持 52+ 种语言，包括中文、英文、日语、韩语、德语、法语等主流语言。

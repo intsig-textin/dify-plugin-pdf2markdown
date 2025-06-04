@@ -42,7 +42,7 @@ def main(response):
 * Highly Accurate Table Recognition: Accurately identifies tables with or without visible borders, as well as dense tables. It handles merged cells and tables spanning multiple pages with ease.
 * Ultra-fast Parsing Speed: For documents up to 100 pages, parsing can be completed in as fast as 1.5 seconds. This ensures an exceptional user experience for online applications and significantly reduces offline processing time.
 * High Stability: Capable of handling millions of requests per day with a success rate of up to 99.999%. Powered by technology proven in large-scale apps with hundreds of millions of users, ensuring stable and reliable performance.
-* Wide Format Support: A single API supports various file formats, including PDF, Word (doc/docx), common image formats (jpg/png/webp/tiff), HTML, and more. With one request, you can extract text, tables, heading hierarchy, formulas, handwritten characters, and image information.
+* Wide Format Support: A single API supports various file formats, including PDF, Word (doc/docx), common image formats (jpg/png/webp/tiff), HTML, Excel(xlsx, csv), PPT(pptx), TXT and more. With one request, you can extract text, tables, heading hierarchy, formulas, handwritten characters, and image information.
 
 # Cases
 
@@ -57,7 +57,7 @@ def main(response):
 # Q&A
 
 **Q: What types of documents does TextIn support?**
-A: It supports a wide range of formats including images (JPG, PNG, etc.), PDF files, Word documents (DOC/DOCX), HTML, Excel, and more.
+A: It supports a wide range of formats including images (JPG, PNG, etc.), PDF files, Word documents (DOC/DOCX), HTML, Excel(xlsx, csv), PPT(pptx), TXT and more.
 
 **Q: What languages does TextIn support for text recognition?**
 A: Currently, it supports over 52 languages, including major ones such as Chinese, English, Japanese, Korean, German, and French.

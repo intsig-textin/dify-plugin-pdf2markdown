@@ -65,7 +65,7 @@ class Pdf2markdownTool(Tool):
                     "markdown": ""
                 })
             else:
-                yield self.create_json_message(response.json())
+                yield self.create_json_message(response.json().get("result"))
                 
         except Exception as e:
             yield self.create_json_message({
