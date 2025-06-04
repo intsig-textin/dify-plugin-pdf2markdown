@@ -57,7 +57,7 @@ parameters:
       en_US: Additional options (JSON string)
       zh_Hans: 更多自定义参数，以 JSON 字符串传入，参考 textin 官方应用示例，如 '{"page_count":1}'
     llm_description: Additional options (JSON string)
-    form: form
+    form: from
 
 extra:
   python:
