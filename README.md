@@ -1,27 +1,32 @@
+<!-- language -->
+
+[English](README.md) | [简体中文](README_zh-CN.md)
+
 # pdf2markdown
 
 **Author:** textin
 
-**Version:** 1.0.0
+**Version:** 1.1.0
 
 **Type:** tool
 
 # Description
 
-[TextIn OCR](https://www.textin.com/market/detail/pdf_to_markdown)is a general-purpose document parsing service designed specifically for downstream tasks of large language models (LLMs). It can recognize text information from documents or images, including financial reports, national standards, academic papers, corporate announcements, user manuals, financial invoices, and more. It extracts key information and supports restoring the document content into standard Markdown format. TextIn offers OCR text recognition covering more than 10 common document layouts and supports over 52 languages, helping various large models efficiently utilize document data in scenarios such as comprehension, generation, and question answering.
+[TextIn OCR](https://www.textin.com/register/code/68KPRK) is a general-purpose document parsing service designed specifically for downstream tasks of large language models (LLMs). It can recognize text information from documents or images, including financial reports, national standards, academic papers, corporate announcements, user manuals, financial invoices, and more. It extracts key information and supports restoring the document content into standard Markdown format. TextIn offers OCR text recognition covering more than 10 common document layouts and supports over 52 languages, helping various large models efficiently utilize document data in scenarios such as comprehension, generation, and question answering.
 
 # Setup
 
 1. Get appid & secret code from [Textin User Center](https://www.textin.com/console/dashboard/setting). Refer to the FAQ below for guidance.
 2. In the Dify workflow, add the "pdf2markdown" plugin and enter the appid and secret code from Step 1 into the parameter panel.
-![](./_assets/README_02.PNG)
+   ![](./_assets/README_02.PNG)
 3. In the "Start" node, add an input item and choose "Single File". You can name the variable as you like, and set the file format to both documents and images, which are supported by TextIn. At the bottom, set the upload method to support both upload and URL.
-![](./_assets/README_03.PNG)
+   ![](./_assets/README_03.PNG)
 4. In the document parsing node, type "/" in the input variable field to bring up the variable binding panel, then select file -> url to bind it to the uploaded file from the Start node.
-![](./_assets/README_04.PNG)
+   ![](./_assets/README_04.PNG)
 5. Use "Options" to add extra parameters in JSON string format, e.g., {"markdown_details":1, "get_image": "objects"}. For more parameters, refer to the official TextIn API documentation: https://www.textin.com/document/pdf_to_markdown
 6. Add a code node to process the returned result. For example, to extract markdown content, bind the entire output of pdf2markdown to the input variable of the "Code" node (e.g., response) and handle it using Python 3, as shown below:
-![](./_assets/README_06.PNG)
+   ![](./_assets/README_06.PNG)
+
 ```python
 import json
 
@@ -31,6 +36,7 @@ def main(response):
             "markdown": res["markdown"]
     }
 ```
+
 # Features
 
 * Highly Accurate Table Recognition: Accurately identifies tables with or without visible borders, as well as dense tables. It handles merged cells and tables spanning multiple pages with ease.
@@ -63,7 +69,7 @@ A: The default output is structured Markdown format, and JSON format is also sup
 A: Usage limits vary based on the subscription plan and account type, including limits on the number of calls and concurrency. Please refer to the official TextIn OCR documentation for details.
 
 **Q: How do I obtain and manage my API key?**
-A: After registering via the [TextIn OCR](https://www.textin.com/register/code/P3U7MA), you can generate and manage your APP ID and APP SECRET in the [User Center](https://www.textin.com/console/dashboard/setting) for calling the [TextIn OCR service](https://www.textin.com/market/detail/pdf_to_markdown).
+A: After registering via the [TextIn OCR](https://www.textin.com/register/code/68KPRK), you can generate and manage your APP ID and APP SECRET in the [User Center](https://www.textin.com/console/dashboard/setting) for calling the TextIn OCR service.
 
 **Q: Does TextIn support batch document processing?**
 A: Yes, it supports batch uploading of documents via API for recognition and parsing, which is suitable for large-scale document processing.
