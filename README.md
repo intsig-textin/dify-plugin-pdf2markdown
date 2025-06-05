@@ -33,7 +33,7 @@ import json
 def main(response):
     res = response[0]
     return {
-            "markdown": res["markdown"]
+            "markdown": res["result"]["markdown"]
     }
 ```
 
